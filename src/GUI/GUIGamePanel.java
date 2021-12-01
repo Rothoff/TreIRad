@@ -2,27 +2,22 @@ package GUI;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
-public class GUIGamePanel extends JFrame{
-    public static void main(String[] args) {
-        JFrame jFrame = new JFrame();
-        JMenuBar jMenuBar = new JMenuBar();
-        JMenu jMenu = new JMenu("Settings");
+public class GUIGamePanel{
+    JPanel jPanel = new JPanel();
+    JButton[] jButton = new JButton[9];
 
-        JPanel jPanel = new JPanel();
-
-        jFrame.setVisible(true);
-        jFrame.setSize(400,400);
-        jFrame.setLocationRelativeTo(null);
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setJMenuBar(jMenuBar);
-        jFrame.add(jPanel);
-
-        jMenuBar.add(jMenu);
-
-        jPanel.setVisible(true);
-        jPanel.setPreferredSize(new Dimension(400,400));
+    GUIGamePanel(){
+        jPanel.setLayout(new GridLayout(3,3));
         jPanel.setBackground(Color.black);
+
+        for (int i = 0; i < 9; i++) {
+            jButton[i] = new JButton("" + i);
+            jPanel.add(jButton[i]);
+            jButton[i].setFocusable(false);
+        }
+
 
     }
 }
