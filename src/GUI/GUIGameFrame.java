@@ -1,18 +1,18 @@
 package GUI;
 
+import GameLogic.Turns;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class GUIGameFrame extends JFrame {
-    public static void main(String[] args) throws FontFormatException {
-        GUIGamePanel GGP = new GUIGamePanel();
+    GUIGamePanel GGP = new GUIGamePanel();
+    JFrame jFrame = new JFrame();
+    JMenuBar jMenuBar = new JMenuBar();
+    JMenu jMenu = new JMenu("Settings");
+    public JLabel jLabel = new JLabel();
 
-        JFrame jFrame = new JFrame();
-        JMenuBar jMenuBar = new JMenuBar();
-        JMenu jMenu = new JMenu("Settings");
-        JLabel jLabel = new JLabel("Tic-Tac-Toe");
-
-        JPanel jPanel = new JPanel();
+    public GUIGameFrame() {
 
         jFrame.setVisible(true);
         jFrame.setSize(600,600);
@@ -34,9 +34,7 @@ public class GUIGameFrame extends JFrame {
         jLabel.setForeground(new Color(64,224,208));
         jLabel.setHorizontalAlignment(JLabel.CENTER);
         jLabel.setOpaque(true);
-
-
-
+        jLabel.setText("Tic-Tac-Toe");
 
 
     }
