@@ -1,9 +1,6 @@
 package GameLogic;
 
 import GUI.GUIGameFrame;
-import GUI.GUIGamePanel;
-
-import javax.swing.*;
 import java.util.Random;
 
 public class Turns {
