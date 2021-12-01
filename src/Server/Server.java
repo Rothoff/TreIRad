@@ -9,6 +9,7 @@ public class Server {
     public static void main(String[] args) {
 
         int port = 33333;
+
         Scanner sc = new Scanner(System.in);
         try {
             ServerSocket serverSocket = new ServerSocket(port);
