@@ -3,11 +3,13 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
-public class GUIGamePanel extends JFrame{
+public class GUIGameMenu {
     public static void main(String[] args) {
+
         JFrame jFrame = new JFrame();
         JMenuBar jMenuBar = new JMenuBar();
         JMenu jMenu = new JMenu("Settings");
+        JButton newGame = new JButton("New Game");
 
         JPanel jPanel = new JPanel();
 
@@ -23,6 +25,12 @@ public class GUIGamePanel extends JFrame{
         jPanel.setVisible(true);
         jPanel.setPreferredSize(new Dimension(400,400));
         jPanel.setBackground(Color.black);
+        jPanel.add(newGame);
+
+        newGame.setVisible(true);
+        newGame.setPreferredSize(new Dimension(100,50));
+        newGame.setFont(new Font("Arial", Font.BOLD, SwingConstants.CENTER));
+
 
     }
 }
