@@ -17,11 +17,11 @@ public class Turns {
         }
         if (random.nextInt(2) == 0) {
             player1sTurn = true;
-            GGFrame.jLabel.setText("O Turns");
+            GGFrame.jLabel.setText("O Turn");
         }
         else {
             player1sTurn = false;
-            GGFrame.jLabel.setText("X Turns");
+            GGFrame.jLabel.setText("X Turn");
         }
     }
 }
