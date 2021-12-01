@@ -2,7 +2,6 @@ package GUI;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class GUIGamePanel{
     JPanel jPanel = new JPanel();
@@ -16,6 +15,11 @@ public class GUIGamePanel{
             jButton[i] = new JButton("" + i);
             jPanel.add(jButton[i]);
             jButton[i].setFocusable(false);
+            jButton[i].setBorderPainted(false);
+            jButton[i].setForeground(new Color(64,224,208));
+            jButton[i].setBackground(Color.black);
+            jButton[i].setFont(new Font("Times", Font.BOLD, 24));
+            jButton[i].setOpaque(true);
         }
 
 
