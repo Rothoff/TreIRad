@@ -5,7 +5,7 @@ import GameLogic.Turns;
 import javax.swing.*;
 import java.awt.*;
 
-public class GUIGameFrame extends JFrame {
+public class GUIGameFrame extends GUIGamePanel{
     GUIGamePanel GGP = new GUIGamePanel();
     JFrame jFrame = new JFrame();
     JMenuBar jMenuBar = new JMenuBar();

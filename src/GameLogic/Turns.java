@@ -6,8 +6,7 @@ import java.util.Random;
 public class Turns {
     Random random = new Random();
     GUIGameFrame GGFrame = new GUIGameFrame();
-
-    boolean player1sTurn;
+  public boolean player1sTurn;
 
     public Turns() {
         try {
